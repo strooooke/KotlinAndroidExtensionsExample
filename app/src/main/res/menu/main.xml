@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_viewpager_fragment_broken"
+          android:icon="@drawable/ic_broken_image_white_24dp"
+          android:title="@string/menu_viewpager_fragment_broken"
+          app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_viewpager_fragment_working"
+          android:icon="@drawable/ic_image_white_24dp"
+          android:title="@string/menu_viewpager_fragment_working"
+          app:showAsAction="ifRoom"/>
+</menu>

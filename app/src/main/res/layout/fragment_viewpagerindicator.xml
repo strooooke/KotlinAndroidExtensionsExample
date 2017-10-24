@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/button_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:textSize="16sp"
+        android:text="@string/button_skip"/>
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/page_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_forward"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp"
+        app:fillColor="@android:color/white"
+        app:strokeColor="@android:color/holo_orange_dark"
+        app:pageColor="@android:color/holo_orange_light"
+        app:radius="6dp"
+        app:strokeWidth="2dp"/>
+
+</RelativeLayout>
